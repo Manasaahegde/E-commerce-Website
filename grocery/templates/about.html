@@ -1,0 +1,39 @@
+{% extends 'navigation.html' %}
+{% load static %}
+{% block body %}
+
+
+<style>
+.prjdiv:hover{
+box-shadow:0 0 20px 0 rgba(0,0,0,0.3);
+transform:translateY(-20px)
+}
+</style>
+
+<div class="container" style = "margin-top : 150px">
+      <h2 class = text-center style = "font-family : 'Monotype Corsiva' ; color : #E6120E">About Us</h2>
+      <div class="row">
+          <div class="col-sm-4 prjdiv">
+              <img src="{% static 'images/abt.jpg' %}" width=300 height = 200 class="img-responsive">        
+          </div>
+          <div class="col-sm-8 prjdiv" style = "font-weight : bold ; margin-top : 30px">
+            Empowering Women, an e-commerce platform dedicated to uplifting and supporting women worldwide.
+             Our mission is to create a safe and inclusive space where women can not only discover exceptional products but also find inspiration, encouragement, and empowerment to pursue their dreams fearlessly.
+          </div>
+          <div class="container" style = "margin-top : 150px">
+            
+            <div class="row">
+                <div class="col-sm-4 prjdiv">
+                    <img src="{% static 'women.jpg' %}" width=300 height = 200 class="img-responsive">        
+                </div>
+                <div class="col-sm-8 prjdiv" style = "font-weight : bold ; margin-top : 10px">
+                    We are committed to curating a diverse range of products from women entrepreneurs and artisans globally.
+                     By providing a platform for these talented individuals, we aim to promote economic independence and enable them to thrive.
+                     Through our efforts, we hope to make a lasting impact on the lives of these women and contribute to building a more equitable society.
+                           
+                                                        
+      </div>
+  </div>
+  
+
+{% endblock %}
